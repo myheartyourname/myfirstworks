@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javascript</title>
+    <script>
+    	// alert(3); /*警示框*/
+    	// console.log('humei');/*控制台*/
+    	// document.write("hu");/*页面显示*/
+    	// document.write('<h1>humei</h1>');
+    	// var a;
+    	// alert(a);
+    	// a=9;
+    	// a=10;
+    	// alert(a);
+    	// var a=8;
+    	// alert(a);
+    	// // s;
+    	// // alert(s);
+    	// d=111;
+    	// alert(d);
+    	// alert(Number.MAX_VALUE);
+    	// var num1=43;
+    	// var num2=40;
+    	// var info="我们班由两个班组成，第一个班5有"+num1+"人，第二个班507有"+num2+"人，总共有"+(num1+num2)+"人";
+    	// console.log(info);
+    	// var num=20;
+    	// alert(--num);//19 19
+     //    alert(num--);//19 18
+     //    alert(--num+2);//19 17
+     //    alert(num++);//17 18
+     //    alert(num);//18
+           // var num=10,num1=20;
+           // alert(num>num1);
+           // var str='abc',str1='abd';
+           // alert(str<str1);
+           // alert(1==true);
+           // alert(1=='true');//false
+           // alert(undefined==null);
+           // var num=9,num1='5px';
+           // alert(num>num1);   
+           // alert('0'==false); 
+           // alert('1'==true); 
+           // alert(undefined==false);
+    </script>
+    <!-- <script>
+    /*成绩  优90~100
+            良80~90
+            中70~80
+            及格60~70
+            不及格0~60
+            50~60努力
+            30~50多努力
+            0~30更努力
+    */
+    	var score=prompt('请输入成绩',60);
+    	if(score>=90&&score<=100){
+    		alert('优秀');
+    	}else if(score>=80&&score<90){
+    		alert('良好');
+    	}else if(score>=70&&score<80){
+    		alert('中等');
+    	}else if(score>=60&&score<70){
+    		alert('及格');
+    	}else if(score>=0&&score<60){
+    		alert('不及格');
+            if(score>=50){      //嵌套分支
+            alert('努力');
+          }else if(score>=30&&score<50){
+            alert('多努力');
+          }else if(score>=0){
+            alert('更努力');
+          }
+    	}else{
+    		alert('是否输入正确');
+    	}
+    </script> -->
+    <!-- <script>
+    	var week=1*prompt('请输入星期',1);
+    	switch (week){
+    		case 1:
+    		alert('第一组');
+    		break;
+    		case 2:
+    		alert('第二组');
+    		break;
+    		case 3:
+    		alert('第三组');
+    		break;
+    		case 4:
+    		alert('第四组');
+    		break;
+    		case 5:
+    		alert('第五组');
+    		break;
+    		case 6:
+    		alert('第六组');
+    		break;
+    		case 7:
+    		alert('第七组');
+    		break;
+    		default:
+    		alert('输入有误');
+    	}
+    </script> -->
+    <script>
+    	var sum=0;
+    	for(var i=1;i<11;i++){
+           sum=i;
+           alert(sum);
+    	}
+    </script>
+    <!-- <script>
+    	var sum=0;
+    	for(var i=1;i<11;i++){
+           sum+=i;
+           alert(sum);
+    	}
+    </script> -->
+    <!-- <script>
+    	var sum=0;
+    	for(var i=1;i<11;i+=2){
+           sum+=i;
+           alert(sum);
+    	}
+    </script>
+    <script>
+    	var sum=0;
+    	for(var i=2;i<11;i+=2){
+           sum+=i;
+           alert(sum);
+    	}
+    </script> -->
+</head>
+<body>
+	
+</body>
+</html>

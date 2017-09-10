@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>if else</title>
+	<script>
+    /*成绩  优90~100
+            良80~90
+            中70~80
+            及格60~70
+            不及格0~60
+            50~60努力
+            30~50多努力
+            0~30更努力
+    */
+    	var score=prompt('请输入成绩',60);
+    	if(score>=90&&score<=100){
+    		alert('优秀');
+    	}else if(score>=80&&score<90){
+    		alert('良好');
+    	}else if(score>=70&&score<80){
+    		alert('中等');
+    	}else if(score>=60&&score<70){
+    		alert('及格');
+    	}else if(score>=0&&score<60){
+    		alert('不及格');
+            if(score>=50){      //嵌套分支
+            alert('努力');
+          }else if(score>=30&&score<50){
+            alert('多努力');
+          }else if(score>=0){
+            alert('更努力');
+          }
+    	}else{
+    		alert('是否输入正确');
+    	}
+    </script>
+</head>
+<body>
+	
+</body>
+</html>
