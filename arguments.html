@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>arguments</title>
+	<!-- 数组之后再放数组 -->
+    <script>
+    /*添加*/
+        var arr=[1,12,3,43,5,26,7,35,19];
+        push(arr,'a','b','c');
+    	function push(arr){
+    		// console.log(arguments);
+            for (var i=1;i<arguments.length;i++){    //i从1开始
+            	arr[arr.length]=arguments[i];
+            }
+            console.log(arr);
+    	}
+    </script>
+
+    <script>
+        var arr=[1,12,3,43,5,26,7,35,19];
+    	push(arr,'a','b','c');
+    	function push(arr,...value){  //“...value”是rest（剩余）参数
+    		//value[i]
+	    	for (var i=0;i<value.length;i++){
+	            arr[arr.length]=value[i];
+	        }
+	        console.log(arr);
+    	}   
+    </script>
+</head>
+<body>
+	
+</body>
+</html>

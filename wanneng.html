@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>万能删除和添加</title>
+	<script>
+    	/*splice 万能的删除 
+    	arr=[1,2,3,4,5]    
+    	pos>=i<pos+num*/
+    	var arr=[1,2,3,4,5];    
+    	spliceCancle(arr,2,2);                 
+        function spliceCancle(arr,pos,num){
+        	var newarr=[];
+        	for (var i=0;i<arr.length;i++){
+        		if (i>=pos&&i<pos+num){
+        			continue;
+        		}
+        		newarr[newarr.length]=arr[i];
+        	}
+        	return newarr;
+        }
+        console.log(spliceCancle(arr,2,2));
+        /*输出结果为1,2,5（删除3,4）*/
+    </script>
+    <script>
+    	/*万能的添加
+    	  spliceAdd(arr,pos,...value)
+    	  1.pos前
+    	  2.i==pos 添加
+    	  3.pos后
+    	  */
+    	var arr=[1,2,3,4,5];
+    	spliceAdd(arr,3,'a','b','c');
+    	function spliceAdd(arr,pos,...value){
+    		var newarr=[];
+    		for (var i=0;i<pos;i++){
+    			newarr[newarr.length]=arr[i];
+    		}
+    		for (var i=0;i<value.length;i++){
+    			newarr[newarr.length]=value[i];
+    		}
+    		for (var i=pos;i<arr.length;i++){
+    			newarr[newarr.length]=arr[i];
+    		}
+    		return newarr;
+    	}
+    	console.log(spliceAdd(arr,3,'a','b','c'));
+    	/*输出结果为1,2,3,"a","b","c",4,5*/
+    </script>
+    <script>
+    /*万能删除添加*/
+    	var arr=[1,2,3,4,5,6];
+    	splice(arr,2,2,'x','y','z');
+    	function splice(arr,pos,num,...value){
+            //var newarr=[];
+    		var newarr=spliceCancle(arr,pos,num); 
+    		if (value.length>0){
+    			newarr=spliceAdd(newarr,pos,...value);
+    		}
+    	    return newarr;   		
+    	}
+        console.log(splice(arr,2,2,'x','y','z'));
+    </script>
+</head>
+<body>
+	
+</body>
+</html>

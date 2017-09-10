@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>最大值</title>
+	<script>
+	/*最大值*/
+	    var arr=[9,8,7,6,5,4,3,2,1];
+		var max=arr[0];
+		for (var i=0;i<arr.length;i++){  
+			if(max<arr[i]){     
+				max=arr[i];  
+			}
+		}
+		console.log(max);
+	</script>
+	<script>
+	/*最大值函数调用*/
+	    var arr=[19,8,7,36,5,4,3,2,1];
+	    maxarr(arr);
+	    function maxarr(){
+	    	var max=arr[0];
+			for (var i=0;i<arr.length;i++){  
+				if(max<arr[i]){     
+					max=arr[i];  
+				}
+			}
+			console.log(max);
+	    }
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

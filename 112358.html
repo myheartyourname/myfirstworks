@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>112358</title>
+	<script>
+	/*1 1 2 3 5 8 13 21*/
+		var i=1;j=1;
+		document.write(i+'&nbsp'+j+'&nbsp');
+		for (var k=0;k<101;){   //k<101;";"不能省
+            k=i+j;
+            document.write(k+'&nbsp');
+            i=j;
+            j=k;
+		}
+	</script>
+	<script>
+	/*1 1 2 3 5 8 13 21 函数调用*/
+	    var k;
+	    sun(200);
+	    function sun(sen){
+	    	var i=1;j=1;
+			document.write(i+'&nbsp'+j+'&nbsp');
+			for (var k=0;k<sen;){   //k<101;";"不能省
+	            k=i+j;
+	            document.write(k+'&nbsp');
+	            i=j;
+	            j=k;
+			}
+	    }
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

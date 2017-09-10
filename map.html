@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>映射map</title>
+	<!-- 映射 -->
+    <script>
+        var arr=[1,2,3,4,5,6];
+        map(arr,function(value){
+        	return value*2;   //选所有     放到新的数组里
+        });
+        function map(arr,fn){
+    		var arr1=[];
+    		for (var i=0;i<arr.length;i++){
+                //arr[i]
+                arr1[arr1.length]=fn(arr[i]);
+    		}
+    		return arr1;
+    	}
+        console.log(map(arr,function(value){
+        	return value*2;
+        }));
+    </script>
+</head>
+<body>
+	
+</body>
+</html>

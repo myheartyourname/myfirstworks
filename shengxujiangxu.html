@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>升序降序</title>
+	<script>
+    // 升序降序
+        var arr=[1,12,3,48,5,26,7,35,19];
+    	// sort(arr,'<');
+    	sort(arr,'>');
+    	function sort(arr,type){
+    		/*有值    没值>默认*/
+    		if(type=='<'){
+    			sortUp(arr)
+    		}else if(type=='>'){
+    			sortDown(arr)
+    		}
+    	}
+    	function sortUp(arr){
+    		for(var i=0;i<arr.length;i++){
+    			for(var j=i+1;j<arr.length;j++){
+                    if(arr[j]<arr[i]){
+                       var temp=arr[j];
+                       arr[j]=arr[i];
+                       arr[i]=temp;
+                    }
+    			}
+    		}
+    		console.log(arr);
+    	}
+    	function sortDown(arr){
+    		for(var i=0;i<arr.length;i++){
+    			for(var j=i+1;j<arr.length;j++){
+                    if(arr[j]>arr[i]){
+                       var temp=arr[j];
+                       arr[j]=arr[i];
+                       arr[i]=temp;
+                    }
+    			}
+    		}
+    		console.log(arr);
+    	}
+    </script>
+	<script>
+    // 升序降序
+        var arr=[1,12,3,43,5,26,7,35,19];
+    	sort(arr);
+    	function sort(arr,type){
+            type=type==undefined?'>':type;
+            // type=type||'>';
+    		if(type=='<'){
+    			sortUp(arr)
+    		}else if(type=='>'){
+    			sortDown(arr)
+    		}
+    	}
+    	function sortUp(arr){
+    		for(var i=0;i<arr.length;i++){
+    			for(var j=i+1;j<arr.length;j++){
+                    if(arr[j]<arr[i]){
+                       var temp=arr[j];
+                       arr[j]=arr[i];
+                       arr[i]=temp;
+                    }
+    			}
+    		}
+    		console.log(arr);
+    	}
+    	function sortDown(arr){
+    		for(var i=0;i<arr.length;i++){
+    			for(var j=i+1;j<arr.length;j++){
+                    if(arr[j]>arr[i]){
+                       var temp=arr[j];
+                       arr[j]=arr[i];
+                       arr[i]=temp;
+                    }
+    			}
+    		}
+    		console.log(arr);
+    	}
+    </script>
+    <script>
+    // 升序降序
+        var arr=[1,12,3,48,5,26,7,35,19];
+    	sort(arr);
+    	function sort(arr,type){
+            // type=type==undefined?'>':type;
+            type=type||'>';
+    		if(type=='<'){
+    			sortUp(arr)
+    		}else if(type=='>'){
+    			sortDown(arr)
+    		}
+    	}
+    	function sortUp(arr){
+    		for(var i=0;i<arr.length;i++){
+    			for(var j=i+1;j<arr.length;j++){
+                    if(arr[j]<arr[i]){
+                       var temp=arr[j];
+                       arr[j]=arr[i];
+                       arr[i]=temp;
+                    }
+    			}
+    		}
+    		console.log(arr);
+    	}
+    	function sortDown(arr){
+    		for(var i=0;i<arr.length;i++){
+    			for(var j=i+1;j<arr.length;j++){
+                    if(arr[j]>arr[i]){
+                       var temp=arr[j];
+                       arr[j]=arr[i];
+                       arr[i]=temp;
+                    }
+    			}
+    		}
+    		console.log(arr);
+    	}
+    </script>
+    <script>
+    // 升序降序
+        var arr=[1,12,3,48,5,26,7,35,19];
+    	sort(arr);
+    	function sort(arr,type){
+    		/*有值    没值>默认*/
+            if (type==undefined){
+            	type='<';
+            }
+    		if(type=='<'){
+    			sortUp(arr)
+    		}else if(type=='>'){
+    			sortDown(arr)
+    		}
+    	}
+    	function sortUp(arr){
+    		for(var i=0;i<arr.length;i++){
+    			for(var j=i+1;j<arr.length;j++){
+                    if(arr[j]<arr[i]){
+                       var temp=arr[j];
+                       arr[j]=arr[i];
+                       arr[i]=temp;
+                    }
+    			}
+    		}
+    		console.log(arr);
+    	}
+    	function sortDown(arr){
+    		for(var i=0;i<arr.length;i++){
+    			for(var j=i+1;j<arr.length;j++){
+                    if(arr[j]>arr[i]){
+                       var temp=arr[j];
+                       arr[j]=arr[i];
+                       arr[i]=temp;
+                    }
+    			}
+    		}
+    		console.log(arr);
+    	}
+    </script>
+</head>
+<body>
+	
+</body>
+</html>

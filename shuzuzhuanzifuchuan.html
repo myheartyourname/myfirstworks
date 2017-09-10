@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组转字符串</title>
+	<!-- 数组转字符串 -->
+    <script> 
+    	var arr=[1,2,3,4,5,6];
+    	join(arr,'-');
+    	function join(arr,str){
+    		var result='';   //如果只是result就是默认值undefined
+    		for (var i=0;i<arr.length;i++){
+                 if (i<arr.length-1){
+                 	result+=arr[i]+str;
+                 }else{
+                 	result+=arr[i];
+                 }
+    		}
+    		return result;
+    	}
+    	console.log(join(arr,'-'));
+    </script>
+    <script>
+    /*逻辑||*/
+    	var arr=[1,2,3,4,5,6];
+    	function join(arr,str){
+    		// str=str==undefined?'-':str;
+    		str=str||'-';
+    		var result='';
+    		for (var i=0;i<arr.length;i++){
+                 if (i<arr.length-1){
+                 	result+=arr[i]+str;
+                 }else{
+                 	result+=arr[i];
+                 }
+    		}
+    		return result;
+    	}
+    	console.log(join(arr));
+    </script>
+
+    <script>
+    /*三元表达式*/
+    	var arr=[1,2,3,4,5,6];
+    	function join(arr,str){
+    		str=str==undefined?'-':str;
+    		var result='';
+    		for (var i=0;i<arr.length;i++){
+                 if (i<arr.length-1){
+                 	result+=arr[i]+str;
+                 }else{
+                 	result+=arr[i];
+                 }
+    		}
+    		return result;
+    	}
+    	console.log(join(arr));
+    </script>
+    <script>
+    /*es6*/
+    	var arr=[1,2,3,4,5,6];
+    	function join(arr,str='-'){
+    		var result='';
+    		for (var i=0;i<arr.length;i++){
+                 if (i<arr.length-1){
+                 	result+=arr[i]+str;
+                 }else{
+                 	result+=arr[i];
+                 }
+    		}
+    		return result;
+    	}
+    	console.log(join(arr));
+    </script>
+</head>
+<body>
+	
+</body>
+</html>

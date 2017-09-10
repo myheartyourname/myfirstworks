@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>复制</title>
+	<!-- copy -->
+    <script>
+    	var arr=[1,2,3,4,5,6];
+    	var arr1=arr;
+    	// 传地址  （浅拷贝）
+    	arr[2]='a';
+    	arr1[3]='b';
+    	console.log(arr);
+    	console.log(arr1);
+        // 传 值    （深拷贝）
+    	// var arr1=[];
+    	// for (var i=0;i<arr.length;i++){
+    	// 	arr1[i]=arr[i];
+    	// }
+    	// arr[3]='h';
+    	// arr1[4]='m';
+    	// console.log(arr);
+    	// console.log(arr1);
+    </script>
+    <script>
+    /*深拷贝*/
+    	var arr=[1,2,3,4,['a','b','c']];
+    	var arr1=copy(arr);
+    	arr[2]='k';
+    	arr1[4][1]='m';
+    	function copy(arr){
+    		var newarr=[];
+			for (var i=0;i<arr.length;i++){
+				if(typeof arr[i]=='object'){
+	    			newarr[i]=copy(arr[i]);
+	    		}else{
+	    			newarr[i]=arr[i];
+	    		}
+	    	}
+	    	    return newarr;
+	    }
+	    console.log(arr);    		
+        console.log(arr1);
+    </script>
+</head>
+<body>
+	
+</body>
+</html>

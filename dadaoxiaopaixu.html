@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>从大到小排序</title>
+	<script>
+	/*从大到小排*/
+		var arr=[9,71,18,6,15,24,30,41];
+		for (var i=0;i<arr.length;i++){
+			for (var j=i+1;j<arr.length;j++){
+				if (arr[i]<arr[j]){
+					var temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+				}
+			}
+		}
+		console.log(arr);
+	</script>
+	<script>
+	/*从大到小排函数调用*/
+		var arr=[99,71,18,6,15,24,30,41];
+		maxarr(arr);
+		function maxarr(arr){
+			var max=arr[0];
+	        for (var i=0;i<arr.length;i++){
+				for (var j=i+1;j<arr.length;j++){
+					if (arr[i]<arr[j]){
+						var temp=arr[i];
+						arr[i]=arr[j];
+						arr[j]=temp;
+					}
+				}
+		    }
+		    console.log(arr);
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

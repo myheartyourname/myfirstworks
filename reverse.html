@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reverse</title>
+	<script>
+    	/*reverse翻转*/
+    	var arr=[1,2,3,4,5];
+    	push(arr,6,7,8,9);
+    	function push(arr,...rest){
+    		//rest的初始数据类型
+    		for (var i=0;i<rest.length;i++){
+    			arr[arr.length]=rest[i];
+    		}
+    		// console.log(arr);
+    	}
+    	reverse(arr);
+    	console.log(reverse(arr));
+    	function reverse(arr){
+    		var newarr=[];
+    		//遍历
+    		for (var i=arr.length-1;i>-1;i--){
+                push(newarr,arr[i]);
+    		}
+    		return newarr;
+    	}
+    </script>
+</head>
+<body>
+	
+</body>
+</html>

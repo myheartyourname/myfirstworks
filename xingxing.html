@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>星型排布</title>
+	<script>
+	/*1 3 5 9*/
+		var row=5;
+		for (i=1;i<=row;i++){
+			for (var j=1;j<=row-i;j++){
+				document.write('_');
+			}
+			for (var j=1;j<=2*i-1;j++){
+				document.write('*');
+			}
+			document.write('</br>');
+		}
+	</script>
+	<script>
+	/*1 3 5 9  函数调用*/
+		var row1=20;
+		san(row1);
+		function san(row){
+			for (i=1;i<=row;i++){
+				for (var j=1;j<=row-i;j++){
+					document.write('_');
+				}
+				for (var j=1;j<=2*i-1;j++){
+					document.write('*');
+				}
+				document.write('</br>');
+			}
+		}
+	</script>
+	<script>
+	/*   *
+	     **
+	     ***
+	     ****
+	     *****
+	     ******
+	*/
+		for (var i=1;i<7;i++){
+			for (var j=1;j<=2*i-1;j++){
+				document.write('*');
+			}
+			document.write('</br>');
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

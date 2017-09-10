@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indexOf</title>
+	<script>
+      /*indexOf  数组里的首次位置   是输出i，否输出-1*/
+        var arr=[2,3,4,1,1,9];
+        indexOf(arr,1);
+    	function indexOf(arr,value){  //value是简单数据类型
+    		//初始数据类型
+    		for (var i=0;i<arr.length;i++){
+    			if (arr[i]==value){
+                    return i;   //返回下标
+    			}
+    		}
+    		return -1;
+    	}
+    	console.log(indexOf(arr,1));
+    	/*输出3*/
+    </script>
+    <script>
+     /*LastindexOf  数组里的后次位置   是输出i，否输出-1*/
+        var arr=[2,3,4,1,1,1,9];
+        LastindexOf(arr,1);
+    	function LastindexOf(arr,value){  //value是简单数据类型
+    		//遍历   初始数据类型
+    		for (var i=arr.length-1;i>=0;i--){
+    			if (arr[i]==value){
+                    return i;   //返回下标
+    			}
+    		}
+    		return -1;
+    	}
+    	console.log(LastindexOf(arr,1));
+    	/*输出1*/
+    </script>
+</head>
+<body>
+	
+</body>
+</html>
